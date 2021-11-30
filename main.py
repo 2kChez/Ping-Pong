@@ -95,3 +95,6 @@ if ball.xcor() < -390:
 
 while True():
   wn.update()
+
+if ball.xcor() > 340 and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() >paddle_b.ycor() -40):
+    ball.dx *= -1
