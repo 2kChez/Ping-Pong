@@ -103,3 +103,11 @@ if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < paddle_b.ycor() 
 if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() >paddle_b.ycor() -40):
   ball.setx(-340)
   ball.dx *= -1
+
+pen = turtle.Turtle()
+pen.speed(0)
+pen.color("white")
+pen.penup
+pen.hideturtle()
+pen.goto(0, 260)
+pen.write("player A: 0  Player B", aligin="center", font=("Courier", 24, "normal"))
