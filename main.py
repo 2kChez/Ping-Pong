@@ -88,10 +88,14 @@ if ball.ycor() < -290:
 if ball.xcor() > 390:
     ball.goto(0, 0)
     ball.dx *= -1
+    score_a += 1
+    pen.write("player A: {}  Player B {}".format(score_a, score_b,aligin="center", font=("Courier", 24, "normal"))
 
 if ball.xcor() < -390:
     ball.goto(0, 0)
     ball.dx *= -1
+    score_b += 1
+    pen.write("player A: {}  Player B {}".format(score_a, score_b,aligin="center", font=("Courier", 24, "normal"))
 
 while True():
   wn.update()
@@ -110,4 +114,8 @@ pen.color("white")
 pen.penup
 pen.hideturtle()
 pen.goto(0, 260)
-pen.write("player A: 0  Player B", aligin="center", font=("Courier", 24, "normal"))
+pen.write("player A: 0  Player B: 0", aligin="center", font=("Courier", 24, "normal"))
+
+score_a = 0
+score_b = 0
+
