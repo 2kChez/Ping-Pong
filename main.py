@@ -89,12 +89,14 @@ if ball.xcor() > 390:
     ball.goto(0, 0)
     ball.dx *= -1
     score_a += 1
+    pen.clear()
     pen.write("player A: {}  Player B {}".format(score_a, score_b,aligin="center", font=("Courier", 24, "normal"))
 
 if ball.xcor() < -390:
     ball.goto(0, 0)
     ball.dx *= -1
     score_b += 1
+    pen.clear()
     pen.write("player A: {}  Player B {}".format(score_a, score_b,aligin="center", font=("Courier", 24, "normal"))
 
 while True():
